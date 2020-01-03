@@ -1,6 +1,7 @@
 import unittest
 import numpy as np
 
+
 class TestArrayBasic(unittest.TestCase):
 
     def test_ndim(self):
@@ -25,6 +26,7 @@ class TestArrayBasic(unittest.TestCase):
         metrix = np.array([[0, 0, 0], [0, 0, 0]])
         self.assertEqual(type(metrix), x)
         self.assertEqual(metrix.dtype, x)
+
 
 if __name__ == '__main__':
     unittest.main()

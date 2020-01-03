@@ -2,6 +2,7 @@ import unittest
 import numpy as np
 from numpy.testing import assert_array_equal
 
+
 class TestArrayStack(unittest.TestCase):
 
     def test_vstack(self):
@@ -21,6 +22,7 @@ class TestArrayStack(unittest.TestCase):
         assert_array_equal(metrixC,
                           np.array([[x, x, x, x],
                                     [x, x, x, x]]))
+
 
 if __name__ == '__main__':
     unittest.main()

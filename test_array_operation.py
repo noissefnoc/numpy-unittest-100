@@ -2,6 +2,7 @@ import unittest
 import numpy as np
 from numpy.testing import assert_array_equal
 
+
 class TestArrayOperation(unittest.TestCase):
 
     def test_plus(self):
@@ -81,6 +82,7 @@ class TestArrayOperation(unittest.TestCase):
     def test_flatten(self):
         metrix = np.array([[0, 1, 2], [3, 4, 5], [6, 7, 8]])
         assert_array_equal(metrix.flatten(), np.array([x, x, x, x, x, x, x, x, x]))
+
 
 if __name__ == '__main__':
     unittest.main()

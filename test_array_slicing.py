@@ -2,6 +2,7 @@ import unittest
 import numpy as np
 from numpy.testing import assert_array_equal
 
+
 class TestArraySlicing(unittest.TestCase):
 
     def test_slicing_1d(self):
@@ -19,6 +20,7 @@ class TestArraySlicing(unittest.TestCase):
     def test_slicing_2d(self):
         metrix = np.arange(9).reshape(3, 3)
         assert_array_equal(metrix[0:2, 0:2], np.array([[x, x], [x, x]]))
+
 
 if __name__ == '__main__':
     unittest.main()

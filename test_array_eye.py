@@ -2,6 +2,7 @@ import unittest
 import numpy as np
 from numpy.testing import assert_array_equal
 
+
 class TestArrayEye(unittest.TestCase):
 
     def test_eye_NxN(self):
@@ -50,6 +51,7 @@ class TestArrayEye(unittest.TestCase):
                           np.array([[x, x, x],
                                     [x, x, x],
                                     [x, x, x]]))
+
 
 if __name__ == '__main__':
     unittest.main()

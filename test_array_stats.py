@@ -2,6 +2,7 @@ import unittest
 import numpy as np
 from numpy.testing import assert_array_equal
 
+
 class TestArrayStats(unittest.TestCase):
 
     def test_sum(self):
@@ -39,6 +40,7 @@ class TestArrayStats(unittest.TestCase):
     def test_min_axis1(self):
         metrix = np.array([[0, 1, 2, 3, 4], [5, 6, 7, 8, 9]])
         assert_array_equal(np.min(metrix, axis=1), np.array([x, x]))
+
 
 if __name__ == '__main__':
     unittest.main()

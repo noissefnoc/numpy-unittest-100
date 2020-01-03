@@ -2,6 +2,7 @@ import unittest
 import numpy as np
 from numpy.testing import assert_array_equal
 
+
 class TestArrayReshape(unittest.TestCase):
 
     def test_reshape2d(self):
@@ -23,6 +24,7 @@ class TestArrayReshape(unittest.TestCase):
                            [ 2, 14, 14],
                            [10, 19,  0]])
         assert_array_equal(metrix.flatten(), np.array([x, x, x, x, x, x, x, x, x]))
+
 
 if __name__ == '__main__':
     unittest.main()

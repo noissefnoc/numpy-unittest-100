@@ -2,6 +2,7 @@ import unittest
 import numpy as np
 from numpy.testing import assert_array_equal
 
+
 class TestArrayCreation(unittest.TestCase):
 
     def test_from_list(self):
@@ -55,6 +56,7 @@ class TestArrayCreation(unittest.TestCase):
     def test_identify(self):
         metrix = np.identity(3)
         assert_array_equal(metrix, np.array([[x, x, x], [x, x, x], [x, x, x]]))
+
 
 if __name__ == '__main__':
     unittest.main()

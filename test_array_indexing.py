@@ -2,6 +2,7 @@ import unittest
 import numpy as np
 from numpy.testing import assert_array_equal
 
+
 class TestArrayIndexing(unittest.TestCase):
 
     def test_indexing_1d(self):
@@ -36,6 +37,7 @@ class TestArrayIndexing(unittest.TestCase):
         assert_array_equal(metrix, np.array([[x, x, x],
                                              [x, x, x],
                                              [x, x, x]]))
+
 
 if __name__ == '__main__':
     unittest.main()

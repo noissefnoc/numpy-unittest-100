@@ -2,6 +2,7 @@ import unittest
 import numpy as np
 from numpy.testing import assert_array_equal
 
+
 class TestArrayUfunc(unittest.TestCase):
 
     def test_abs(self):
@@ -34,6 +35,7 @@ class TestArrayUfunc(unittest.TestCase):
         A = np.array([0, 1, 2])
         B = np.array([2, -1, 4])
         assert_array_equal(np.maximum(A, B), np.array([x, x, x]))
+
 
 if __name__ == '__main__':
     unittest.main()
